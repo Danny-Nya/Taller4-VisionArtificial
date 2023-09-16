@@ -1,0 +1,12 @@
+1. Para un tipo de filtro particular, ¿aplicarlo 5 veces consecutivas sobre la imagen utilizando
+un tamaño de ventana o kernel de 3x3 genera el mismo resultado que aplicarlo una única
+vez con un tamaño de ventana o kernel de 11x11? ¿Para qué tipos de filtros es esto válido?
+¿Entre las dos versiones, cuál sería la más rápida de aplicar?
+
+R/ No, no genera el mismo resultado, en ningún caso. es válido para Gaussiana, Normalice y Mediana.
+En casi todos los casos es más rápido el filtro de 11x11
+
+2. Para la imagen adjunta, generar una combinación de filtros de diferentes tipos que permita
+reducir al máximo el ruido presente sin afectar la definición de los bordes. ¿Cuál es la mejor
+combinación que pueden encontrar?
+la mejor combinación que encontramos es hacer un filtro de gaussiana y uno de bilateral
